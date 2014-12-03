@@ -3,9 +3,9 @@ Raytracer
 This is a simple Ray Tracer written in C++.
 
 ![Alt text](/output_examples/bneumann_00_2011.png?raw=true "")
-![Alt text](/output_examples/test_simpleSceneTwoSpheres_01.png?raw=true "")
 
 Planet animation: http://youtu.be/6G5qIkZhATA
+
 Transformations animation: http://youtu.be/SCoP93IcWRI
 
 Features
@@ -28,8 +28,10 @@ Build instructions (Linux only)
 =========
 To compile first run the /src/install_requirements.sh script (will load the dependencies using apt-get). Then from the /bin directory type:
 
-# cmake ../src
-# make
-# ./raytracer
+```
+cmake ../src
+make
+./raytracer
+```
 
 (C) Piero Toffanin 2012
