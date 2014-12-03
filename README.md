@@ -34,4 +34,4 @@ make
 ./raytracer
 ```
 
-(C) Piero Toffanin 2012
+© Piero Toffanin 2012
