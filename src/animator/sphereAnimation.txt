@@ -1,0 +1,4 @@
+from 0 to 30 increase translate-z of midellipsoid by 0.05
+from 0 to 30 increase diffuse-x of blueMat by 0.02
+from 0 to 30 increase diffuse-z of blueMat by 0.03
+

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--  A scene with a little bit of everything.
+      Namely, 
+  -->
+<scene bgColor="0.5 0.5 0.6" >
+
+  <!-- Simple camera placed back from the origin looking in -Z direction -->
+  <camera name="main-camera" type="perspective">
+    <position>0 10.0 12.0</position>
+    <lookatPoint>0 0 0</lookatPoint>
+    <focalLength>0.35</focalLength>
+    <imagePlaneWidth>0.5</imagePlaneWidth>
+  </camera>
+
+  <light type="point" name="main-light">
+    <position>0.0 4.0 10.0</position>
+    <intensity>1 1 1</intensity>
+  </light>
+
+  <!-- Lambertian Shaders -->
+  <shader name="redMat" type="Lambertian">
+    <diffuse>1 0 0</diffuse>
+  </shader>
+  <shader name="greenMat" type="Lambertian">
+    <diffuse>0 1 0</diffuse>
+  </shader>
+  <shader name="blueMat" type="Lambertian">
+    <diffuse>0 0 1</diffuse>
+  </shader>
+  <shader name="yellowMat" type="Lambertian">
+    <diffuse>1 1 0</diffuse>
+  </shader>
+  <shader name="cyanMat" type="Lambertian">
+    <diffuse>0 1 1</diffuse>
+  </shader>
+  <shader name="magentaMat" type="Lambertian">
+    <diffuse>1 0 1</diffuse>
+  </shader>
+
+  <!-- BlinnPhong Shaders -->
+  <shader name="redPlastic" type="BlinnPhong">
+    <diffuse>1 0 0</diffuse>
+    <specular>1 1 1</specular>
+    <phongExp>32.0</phongExp>
+  </shader>
+  <shader name="chrome" type="BlinnPhong">
+    <diffuse>1 1 1</diffuse>
+    <specular>1 1 1</specular>
+    <phongExp>32.0</phongExp>
+    <mirrorCoef>1.0</mirrorCoef>
+  </shader>
+
+  <!-- Glaze Shaders -->
+  <shader name="redGlaze" type="Glaze">
+    <diffuse>1 0 0</diffuse>
+    <mirrorCoef>0.45</mirrorCoef>
+  </shader>
+  <shader name="purpleGlaze" type="Glaze">
+    <diffuse>0.2941 0.1882 0.5529</diffuse>
+    <mirrorCoef>0.40</mirrorCoef>
+  </shader>
+  <shader name="greyGlaze" type="Glaze">
+    <diffuse>0.7 0.7 0.7</diffuse>
+    <mirrorCoef>0.60</mirrorCoef>
+  </shader>
+
+  <!-- Dielectric Shaders -->
+
+
+
+  <!-- Textures -->
+  <texture name="earthTex" type="image">
+    <sourcefile>images/earth.png</sourcefile>
+  </texture>
+  <texture name="moonTex" type="image">
+    <sourcefile>images/moon.png</sourcefile>
+  </texture>
+  <texture name="spaceTex" type="image">
+    <sourcefile>images/stars.png</sourcefile>
+  </texture>
+  <shader name="earthMap" type="Lambertian">
+    <diffuse>1.0 1.0 1.0</diffuse>
+    <diffusetex>earthTex</diffusetex>
+  </shader>
+  <shader name="moonMap" type="Lambertian">
+    <diffuse>1.0 1.0 1.0</diffuse>
+    <diffusetex>moonTex</diffusetex>
+  </shader>
+  <shader name="skyMap" type="Lambertian">
+    <diffuse>1.0 1.0 1.0</diffuse>
+    <diffusetex>spaceTex</diffusetex>
+  </shader>
+
+  <instance name="earthModel" type="sphere">
+    <shader ref="earthMap"/>
+    <center>0.0 0.0 0.0</center>
+    <radius>4.0</radius>
+  </instance>
+  <shape name="earth" type="instance" id="earthModel">
+    <transform name="xform1">
+      <rotate axis="X">90</rotate>
+      <rotate axis="Z">0</rotate>      
+    </transform>
+  </shape> 
+
+  <instance name="moonModel" type="sphere">
+    <shader ref="moonMap"/>
+    <center>0.0 0.0 0.0</center>
+    <radius>0.8</radius>
+  </instance>
+  <shape name="moon" type="instance" id="moonModel">
+    <transform name="xform1">
+      <translate>8 0 0</translate>
+      <rotate axis="Z">0</rotate>
+    </transform>
+  </shape> 
+
+  <instance name="skyModel" type="skysphere">
+    <shader ref="skyMap"/>
+    <center>0.0 0.0 0.0</center>
+    <radius>2000.0</radius>
+  </instance>
+  <shape name="sky" type="instance" id="skyModel">
+    <transform name="xform1">
+      <rotate axis="X">-90</rotate>
+    </transform>
+  </shape> 
+
+</scene>

@@ -1,0 +1,1 @@
+The files in this directory are (C) by Pete Willemsn (willemsn@d.umn.edu) and are not subject to the terms of the license for the rest of the software.

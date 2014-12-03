@@ -1,0 +1,2 @@
+/home/piero/Desktop/raytracer/bin/cs5721Code/cs5721GraphicsLib/src/CMakeFiles/cs5721Graphics.dir
+/home/piero/Desktop/raytracer/bin/CMakeFiles/raytracer.dir

@@ -1,0 +1,42 @@
+# Move small balls in front (first cycle)
+from 0 to 120 increase translate-y of rightsphere by 0.025
+from 0 to 120 increase translate-x of midsphere by 0.025
+from 0 to 120 increase translate-z of leftsphere by 0.025
+
+# Move small balls in front (second cycle)
+from 121 to 240 decrease translate-y of rightsphere by 0.025
+from 121 to 240 decrease translate-x of midsphere by 0.025
+from 121 to 240 decrease translate-z of leftsphere by 0.025
+
+# Rotate big ellipsoids in back (1-3 cycle)
+from 0 to 500 increase rotate-x of rightellipsoid by 7
+from 0 to 500 increase rotate-y of midellipsoid by 2
+from 0 to 500 increase rotate-y of leftellipsoid by 7
+
+# Shoot small balls
+from 241 to 271 increase translate-z of rightsphere by 0.266
+from 241 to 271 increase translate-z of midsphere by 0.266
+from 241 to 271 increase translate-z of leftsphere by 0.266
+
+from 241 to 271 increase translate-y of rightsphere by 0.07
+from 241 to 271 increase translate-y of midsphere by 0.07
+from 241 to 271 increase translate-y of leftsphere by 0.07
+
+# Scale middle ellipsoid
+from 260 to 460 increase scale-x of midellipsoid by 0.02
+from 260 to 460 increase scale-y of midellipsoid by 0.02
+
+# Change colors of other ellipsoids 0.8 0.2 0.2
+from 260 to 500 decrease diffuse-x of redMat by 0.08
+from 260 to 500 increase diffuse-y of redMat by 0.08
+from 260 to 500 increase diffuse-z of redMat by 0.08
+
+from 260 to 500 increase diffuse-x of blueMat by 0.02
+from 260 to 500 decrease diffuse-z of blueMat by 0.07
+
+# Set background to a mirror
+from 260 to 360 increase mirrorCoef of greyMatMirror by 0.008
+
+# Move camera past the objects
+from 360 to 500 decrease position-z of main by 0.09
+

@@ -1,0 +1,23 @@
+# Rotate moon around earth
+
+from 0 to 500 set translate-x of moon at 6.5 * Math::cos(t * ((2 * Math::PI) / 120))
+from 0 to 500 set translate-z of moon at 6.5 * Math::sin(t * ((2 * Math::PI) / 120))
+
+# Spin moon
+from 0 to 500 decrease rotate-z of moon by 0.3
+
+# Spin earth
+from 0 to 500 increase rotate-z of earth by 0.5
+
+# Move camera
+from 90 to 300 decrease position-z of main-camera by 0.10
+from 90 to 195 decrease position-x of main-camera by 0.02
+from 196 to 300 increase position-x of main-camera by 0.02
+from 301 to 500 decrease position-x of main-camera by 0.0005
+
+# Move light
+from 301 to 331 decrease position-z of main-light by 0.5
+from 301 to 331 decrease position-x of main-light by 0.5
+
+# Hoover light across
+from 332 to 500 increase position-x of main-light by 0.20

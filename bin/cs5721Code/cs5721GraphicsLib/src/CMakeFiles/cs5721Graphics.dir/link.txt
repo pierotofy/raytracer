@@ -1,0 +1,2 @@
+/usr/bin/ar cr libcs5721Graphics.a  CMakeFiles/cs5721Graphics.dir/ArgumentParsing.cpp.o CMakeFiles/cs5721Graphics.dir/handleGraphicsArgs.cpp.o CMakeFiles/cs5721Graphics.dir/model_obj.cpp.o CMakeFiles/cs5721Graphics.dir/Random.cpp.o CMakeFiles/cs5721Graphics.dir/Timer.cpp.o CMakeFiles/cs5721Graphics.dir/Vector3D.cpp.o CMakeFiles/cs5721Graphics.dir/XMLSceneParser.cpp.o
+/usr/bin/ranlib libcs5721Graphics.a

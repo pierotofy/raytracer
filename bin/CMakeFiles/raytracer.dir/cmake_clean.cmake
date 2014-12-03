@@ -1,0 +1,43 @@
+FILE(REMOVE_RECURSE
+  "CMakeFiles/raytracer.dir/main.cpp.o"
+  "CMakeFiles/raytracer.dir/Scene.cpp.o"
+  "CMakeFiles/raytracer.dir/Camera.cpp.o"
+  "CMakeFiles/raytracer.dir/Light.cpp.o"
+  "CMakeFiles/raytracer.dir/PointLight.cpp.o"
+  "CMakeFiles/raytracer.dir/AreaLight.cpp.o"
+  "CMakeFiles/raytracer.dir/OrthNormBasis.cpp.o"
+  "CMakeFiles/raytracer.dir/Object.cpp.o"
+  "CMakeFiles/raytracer.dir/Shader.cpp.o"
+  "CMakeFiles/raytracer.dir/LambertianShader.cpp.o"
+  "CMakeFiles/raytracer.dir/BlinnphongShader.cpp.o"
+  "CMakeFiles/raytracer.dir/NormalMapShader.cpp.o"
+  "CMakeFiles/raytracer.dir/AmbientShader.cpp.o"
+  "CMakeFiles/raytracer.dir/GlazeShader.cpp.o"
+  "CMakeFiles/raytracer.dir/Utils.cpp.o"
+  "CMakeFiles/raytracer.dir/SphereObject.cpp.o"
+  "CMakeFiles/raytracer.dir/BoxObject.cpp.o"
+  "CMakeFiles/raytracer.dir/PyramidObject.cpp.o"
+  "CMakeFiles/raytracer.dir/TriangleObject.cpp.o"
+  "CMakeFiles/raytracer.dir/CylinderObject.cpp.o"
+  "CMakeFiles/raytracer.dir/Ray.cpp.o"
+  "CMakeFiles/raytracer.dir/Matrix4.cpp.o"
+  "CMakeFiles/raytracer.dir/Transform.cpp.o"
+  "CMakeFiles/raytracer.dir/Texture.cpp.o"
+  "CMakeFiles/raytracer.dir/TextureManager.cpp.o"
+  "CMakeFiles/raytracer.dir/InstanceManager.cpp.o"
+  "CMakeFiles/raytracer.dir/InstanceObject.cpp.o"
+  "CMakeFiles/raytracer.dir/Instance.cpp.o"
+  "CMakeFiles/raytracer.dir/SkySphereObject.cpp.o"
+  "CMakeFiles/raytracer.dir/BoundingBox.cpp.o"
+  "CMakeFiles/raytracer.dir/MeshObject.cpp.o"
+  "CMakeFiles/raytracer.dir/Thread.cpp.o"
+  "CMakeFiles/raytracer.dir/RenderThread.cpp.o"
+  "CMakeFiles/raytracer.dir/BvhNode.cpp.o"
+  "raytracer.pdb"
+  "raytracer"
+)
+
+# Per-language clean rules from dependency scanning.
+FOREACH(lang CXX)
+  INCLUDE(CMakeFiles/raytracer.dir/cmake_clean_${lang}.cmake OPTIONAL)
+ENDFOREACH(lang)
