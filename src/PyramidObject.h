@@ -28,7 +28,7 @@ namespace ptrt {
 		// A pyramid is composed of 6 triangles
 		vector<Object *> triangles;
 
-		friend ostream& ptrt::operator<<(ostream&, ptrt::PyramidObject &);
+		friend ostream& operator<<(ostream&, ptrt::PyramidObject &);
 	protected:
 		virtual bool intersect(const Ray&, float &, float &) { assert(false); return false; }
 

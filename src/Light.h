@@ -17,7 +17,7 @@ namespace ptrt{
 			Vector3D position;
 			Vector3D intensity;
 
-			friend ostream& ptrt::operator<<(ostream&, const ptrt::Light &);
+			friend ostream& operator<<(ostream&, const ptrt::Light &);
 		public:
 			Light(map<string, SceneDataContainer> &);
 			virtual ~Light();

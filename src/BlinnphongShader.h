@@ -25,7 +25,7 @@ private:
 	Vector3D specular;
 	float phong_exp;
 
-	friend ostream& operator<<(ostream&, ptrt::BlinnphongShader &);
+	friend ostream& operator<<(ostream&, BlinnphongShader &);
 public:
 	BlinnphongShader(map<string, SceneDataContainer> &);
 	Vector3D apply_shader_for_light(const ShaderArgs &, Light *, const Vector3D &, const Vector3D &, const Vector3D &);

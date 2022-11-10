@@ -24,7 +24,7 @@ namespace ptrt{
 			Shader *shader;
 			BoundingBox bounding_box;
 
-			friend ostream& ptrt::operator<<(ostream&, ptrt::Object &);
+			friend ostream& operator<<(ostream&, ptrt::Object &);
 
 			/** Only primitives need to implement this */
 			virtual bool intersect(const Ray&, float &, float &) = 0;

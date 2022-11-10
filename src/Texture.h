@@ -18,7 +18,7 @@ namespace ptrt{
 			int width;
 			int height;
 
-			friend ostream& ptrt::operator<<(ostream&, ptrt::Texture &);
+			friend ostream& operator<<(ostream&, ptrt::Texture &);
 		public:
 			Texture(const string &, const string&);
 			Texture(map<string, SceneDataContainer> &);

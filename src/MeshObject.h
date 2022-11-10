@@ -27,7 +27,7 @@ namespace ptrt {
 		vector<Object *> triangles;
 		BvhNode *root_node;
 
-		friend ostream& ptrt::operator<<(ostream&, ptrt::MeshObject &);
+		friend ostream& operator<<(ostream&, ptrt::MeshObject &);
 	protected:
 		virtual bool intersect(const Ray&, float &, float &) { 	assert(false); return false; }
 

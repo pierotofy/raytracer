@@ -17,7 +17,7 @@ namespace ptrt{
 			Object *object;
 			Shader *default_shader;
 
-			friend ostream& ptrt::operator<<(ostream&, ptrt::Instance &);
+			friend ostream& operator<<(ostream&, ptrt::Instance &);
 		public:
 			Instance(std::map<std::string, SceneDataContainer> &sdMap, map<string, Shader *> &shaders);
 			virtual ~Instance();

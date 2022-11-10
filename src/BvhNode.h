@@ -38,7 +38,7 @@ namespace ptrt {
 		int axis;
 		SubdivisionType type;
 
-		friend ostream& ptrt::operator<<(ostream&, ptrt::BvhNode &);
+		friend ostream& operator<<(ostream&, ptrt::BvhNode &);
 
 		void do_space_based_subdivision();
 		void do_object_based_subdivision();

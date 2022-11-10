@@ -29,7 +29,7 @@ namespace ptrt{
 			float aspect_ratio;
 			OrthNormBasis *basis;
 
-			friend ostream& ptrt::operator<<(ostream&, const ptrt::Camera &);
+			friend ostream& operator<<(ostream&, const ptrt::Camera &);
 		public:
 			Camera(float aspect_ratio);
 			virtual ~Camera();

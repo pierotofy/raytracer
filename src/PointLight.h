@@ -14,7 +14,7 @@ namespace ptrt{
 	class PointLight : public Light{
 		private:
 
-			friend ostream& ptrt::operator<<(ostream&, const ptrt::PointLight &);
+			friend ostream& operator<<(ostream&, const ptrt::PointLight &);
 		public:
 			PointLight(map<string, SceneDataContainer> &);
 			virtual ~PointLight();

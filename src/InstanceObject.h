@@ -22,7 +22,7 @@ namespace ptrt{
 			Matrix4 transform_matrix_inverse;
 			Matrix4 transform_matrix_inverse_transpose;
 
-			friend ostream& ptrt::operator<<(ostream&, ptrt::InstanceObject &);
+			friend ostream& operator<<(ostream&, ptrt::InstanceObject &);
 		protected:
 			virtual bool intersect(const Ray&, float &, float &) { assert(false); return false; } // Always use instance object's intersect methods
 			virtual Vector3D get_normal(const Vector3D&){ assert(false); return Vector3D(); } // Always use instance object's get normal methods

@@ -28,7 +28,7 @@ namespace ptrt {
 		// A box is composed of 12 triangles
 		vector<Object *> triangles;
 
-		friend ostream& ptrt::operator<<(ostream&, ptrt::BoxObject &);
+		friend ostream& operator<<(ostream&, ptrt::BoxObject &);
 	protected:
 		virtual bool intersect(const Ray&, float &, float &) { 	assert(false); return false; }
 

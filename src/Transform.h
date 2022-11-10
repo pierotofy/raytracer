@@ -16,7 +16,7 @@ namespace ptrt{
 			string name;
 			Matrix4 matrix;
 
-			friend ostream& ptrt::operator<<(ostream&, ptrt::Transform &);
+			friend ostream& operator<<(ostream&, ptrt::Transform &);
 		public:
 			Transform(const string&);
 			Transform(map<string, SceneDataContainer> &);

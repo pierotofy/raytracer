@@ -27,7 +27,7 @@ namespace ptrt{
 	    	bool cast_shadows;
 	    	Texture *diffuse_texture;
 
-			friend ostream& ptrt::operator<<(ostream&, ptrt::Shader &);
+			friend ostream& operator<<(ostream&, ptrt::Shader &);
 		public:
 			Shader(const string&);
 			Shader(map<string, SceneDataContainer> &);

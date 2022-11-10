@@ -19,7 +19,7 @@ namespace ptrt{
 			float length;
 			OrthNormBasis basis;
 
-			friend ostream& ptrt::operator<<(ostream&, const ptrt::AreaLight &);
+			friend ostream& operator<<(ostream&, const ptrt::AreaLight &);
 		public:
 			AreaLight(map<string, SceneDataContainer> &);
 			virtual ~AreaLight();

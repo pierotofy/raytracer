@@ -23,7 +23,7 @@ namespace ptrt{
 			Vector3D min_pt;
 			Vector3D max_pt;
 
-			friend ostream& ptrt::operator<<(ostream&, ptrt::BoundingBox &);
+			friend ostream& operator<<(ostream&, ptrt::BoundingBox &);
 		public:
 			BoundingBox(){ initialized = false; }
 			BoundingBox(const Vector3D &, const Vector3D &);

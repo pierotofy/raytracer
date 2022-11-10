@@ -23,7 +23,7 @@ private:
 	float a, b, c, d, e, f;
 	float ae, dc, bf, ce, fa, bd;
 
-	friend ostream& ptrt::operator<<(ostream&, ptrt::TriangleObject &);
+	friend ostream& operator<<(ostream&, ptrt::TriangleObject &);
 protected:
 	virtual bool intersect(const Ray&, float &, float &);
 	virtual Vector3D get_normal(const Vector3D&);
